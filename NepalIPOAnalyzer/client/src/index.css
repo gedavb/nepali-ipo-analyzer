@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+@import 'react-day-picker/dist/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Day Picker Calendar Styles */
+.rdp {
+  --rdp-accent-color: #3B82F6;
+  --rdp-background-color: #EFF6FF;
+  margin: 0;
+}
+
+.rdp-day_selected:not(.rdp-day_outside) {
+  font-weight: bold;
+  background-color: var(--rdp-accent-color);
+  color: white;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+  color: var(--rdp-accent-color);
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: var(--rdp-background-color);
+}
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 348 86% 47%; /* Nepal flag red */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 100% 24%; /* Deep blue */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 348 86% 47%;
+  --radius: 0.5rem;
+  
+  /* Additional colors for the app */
+  --success: 151 55% 41.8%;
+  --warning: 38 92% 50%;
+  --danger: 0 84.2% 60.2%;
+  --info: 214 94% 46.1%;
+  
+  /* Chart colors */
+  --chart-1: 348 86% 47%;
+  --chart-2: 215 100% 24%;
+  --chart-3: 151 55% 41.8%;
+  --chart-4: 38 92% 50%;
+  --chart-5: 214 94% 46.1%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 348 86% 47%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 215 100% 24%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-roboto antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+}
+
+/* Additional utility classes */
+.text-success {
+  color: hsl(var(--success));
+}
+
+.text-warning {
+  color: hsl(var(--warning));
+}
+
+.text-danger {
+  color: hsl(var(--destructive));
+}
+
+.text-info {
+  color: hsl(var(--info));
+}
+
+.bg-success {
+  background-color: hsl(var(--success));
+}
+
+.bg-warning {
+  background-color: hsl(var(--warning));
+}
+
+.bg-danger {
+  background-color: hsl(var(--destructive));
+}
+
+.bg-info {
+  background-color: hsl(var(--info));
+}
+
+/* Low bandwidth mode styles */
+.low-bandwidth-mode {
+  background-image: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Custom font family utility classes */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}

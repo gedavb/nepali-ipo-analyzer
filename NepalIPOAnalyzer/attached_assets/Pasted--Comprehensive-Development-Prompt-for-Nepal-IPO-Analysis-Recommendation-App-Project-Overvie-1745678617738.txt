@@ -1,0 +1,283 @@
+# Comprehensive Development Prompt for Nepal IPO Analysis & Recommendation App
+
+## Project Overview
+Create a comprehensive mobile and web application that helps Nepali investors make informed decisions about IPO investments in Nepal's stock market. The app should analyze upcoming IPOs, provide recommendations based on financial data and market trends, and operate within Nepal's regulatory framework.
+
+## Target Market
+- Nepali investors (both novice and experienced)
+- Focus on Nepal's unique market conditions and regulations
+- Support for both urban users with good connectivity and rural users with limited connectivity
+
+## Core Features and Requirements
+
+### 1. IPO Discovery & Calendar
+- Real-time tracking of upcoming, ongoing, and recently closed IPOs in Nepal
+- Detailed calendar with key dates (opening, closing, minimum shares, allotment dates)
+- Notification system for important IPO events
+- Filter options based on sector, issue size, and subscription type (public, mutual funds, staff)
+
+### 2. Company Analysis Module
+- Comprehensive company profiles including:
+  - Business overview, industry position, and competitive advantages
+  - Management team analysis and track record
+  - Financial statement analysis (3-5 years if available)
+  - Key financial ratios relevant to Nepal's market (P/E, P/B, ROE, Debt-to-Equity)
+  - Intended use of IPO proceeds
+  - Group/parent company relationships and business connections
+
+### 3. Recommendation Engine
+- Multi-factor analysis algorithm with:
+  - Fundamental score (based on financial health)
+  - Valuation score (issue price compared to peers and fundamentals)
+  - Sector outlook score (growth potential of industry in Nepal)
+  - Management quality score
+  - Market timing score (based on current market conditions)
+- Clear recommendation categories: Strong Buy, Buy, Hold, Avoid
+- Probability estimation for short-term listing gains
+- Long-term investment potential assessment
+- Transparent explanation of recommendation factors
+
+### 4. Nepal Market Intelligence
+- Nepal Stock Exchange (NEPSE) index tracking and correlation with IPO performance
+- Sector-specific performance indicators
+- Historical IPO database with subscription rates and listing performances
+- Regulatory news and updates from SEBON and Nepal Rastra Bank
+- Sentiment analysis of Nepali financial news from major sources
+
+### 5. Educational Resources
+- Step-by-step IPO application guide for Nepal's ASBA/C-ASBA system
+- DEMAT account setup instructions
+- IPO investment basics tailored to Nepal's market
+- Frequently asked questions about Nepal's IPO process
+- Glossary of Nepali market-specific terms
+
+### 6. User Personalization
+- User profile with investment preferences and risk tolerance
+- Watchlist for tracking specific upcoming IPOs
+- Portfolio tracking for allotted shares
+- Performance tracking of investments
+- Customizable notification settings
+
+## Technical Requirements
+
+### Data Sources
+- Nepal Stock Exchange (NEPSE) website and API
+- Securities Board of Nepal (SEBON) announcements
+- Company prospectuses and financial statements
+- Nepali financial news portals (Merolagani, ShareSansar, NewBusinessAge)
+- Historical IPO data from reliable sources
+- Merchant banker websites for issue managers
+
+### Backend Architecture
+- Programming Language: Node.js/Express or Python/Django for server-side logic
+- Database: MongoDB for flexible data storage, PostgreSQL for relational data
+- Caching: Redis for frequently accessed data
+- Authentication: JWT with OTP verification via Nepali phone numbers
+- Hosting: Cloud infrastructure with CDN support for Nepal-based access optimization
+- Background Jobs: Scheduled tasks for data updates and notification processing
+
+### Frontend Development
+- Progressive Web App (PWA) architecture for cross-platform compatibility
+- Mobile-first responsive design optimized for popular Nepali devices
+- Support for low-bandwidth mode for users in areas with poor connectivity
+- Offline capability for basic information viewing
+- Modern UI framework (React/React Native) with Nepali language support
+- Visualization libraries for financial data representation
+
+### Data Analysis Components
+- Natural Language Processing for Nepali financial news sentiment analysis
+- Rule-based scoring algorithm with transparent weighting
+- Time-series analysis for historical pattern recognition
+- Simple machine learning models for subscription rate prediction
+- Financial ratio calculation engine
+
+### Regulatory Compliance
+- Adherence to SEBON guidelines for investment advice
+- Clear disclaimers about investment risks
+- Transparency in data sources and analysis methodology
+- Privacy protection for user data according to Nepal's data protection laws
+- Terms of service aligned with Nepali financial sector regulations
+
+## Development Phases
+
+### Phase 1: MVP (2-3 months)
+- Basic IPO calendar and listings
+- Company information display
+- Simple recommendation system based on fundamental metrics
+- User registration and basic profiles
+- Educational content
+
+### Phase 2: Enhanced Analysis (2 months)
+- Advanced recommendation engine
+- Historical IPO database integration
+- News aggregation and basic sentiment analysis
+- Portfolio tracking features
+- Improved UI/UX based on initial user feedback
+
+### Phase 3: Advanced Features (3 months)
+- Machine learning-based predictions
+- Community features for discussions
+- Advanced portfolio analytics
+- Integration with broker services (if partnerships established)
+- Premium subscription features
+
+## Monetization Strategy
+- Freemium model with basic features free to all users
+- Premium subscription for advanced recommendations and alerts
+- Partnership opportunities with Nepali brokerages
+- Sponsored educational content from financial institutions
+
+## Success Metrics
+- User growth rate among Nepali investors
+- Accuracy of IPO performance predictions
+- User retention and engagement metrics
+- Subscription conversion rate for premium features
+- App store ratings and user feedback
+
+## Special Considerations for Nepal
+- Support for Nepali language interface
+- Offline functionality for rural areas with limited connectivity
+- Simplified interface for new investors
+- Educational focus to improve financial literacy
+- Consideration of Nepal's unique market dynamics and regulatory environment
+- Adaptation to frequent regulatory changes in Nepal's evolving capital market
+
+This app must deliver clear value by helping users identify promising IPO opportunities in Nepal's market while educating them about making informed investment decisions within the local regulatory framework.                                    To find information about ongoing IPOs, upcoming IPOs, and available IPOs in Nepal, you can rely on several reliable sources, including official regulatory websites, financial portals, and news platforms. Below is a comprehensive guide to help you access this information:
+
+1. Official Sources
+Securities Board of Nepal (SEBON)
+Website: sebon.gov.np
+What You’ll Find:
+IPO Pipeline: Lists companies that have applied for IPO approval and are under review.
+IPO Approved: Details of IPOs that have been approved by SEBON, including company names, issue size, and status.
+Announcements: Official notices about IPO processes, approvals, and regulatory updates.
+How to Access:
+Visit the SEBON website and navigate to the “IPO Pipeline” or “IPO Approved” sections.
+Check for downloadable PDFs or tables listing IPO details.
+Why It’s Reliable: SEBON is the regulatory body overseeing all capital market activities in Nepal, making it the most authoritative source for IPO information.
+Nepal Stock Exchange (NEPSE)
+Website: nepse.com.np
+What You’ll Find:
+Information about listed companies and their IPOs.
+Market updates that may include IPO-related announcements.
+How to Access:
+Visit the NEPSE website and look for news or announcements related to IPOs.
+Check the “Company” or “Market” sections for IPO-related data.
+Note: NEPSE primarily focuses on trading but may provide updates on newly listed companies post-IPO.
+2. Financial Portals and News Websites
+These platforms aggregate IPO information from SEBON and other sources, often presenting it in a user-friendly format with additional details like issue dates, issue managers, and share units.
+
+ShareSansar
+Website: sharesansar.com
+What You’ll Find:
+Ongoing IPOs: Details of currently open IPOs, including subscription periods and application processes.
+Upcoming IPOs: Lists of IPOs approved by SEBON or in the pipeline, with expected issue dates.
+IPO Allotment News: Results of IPO allotments and listing updates.
+Sector-wise IPOs: Information on IPOs in sectors like hydropower, microfinance, insurance, and tourism.
+How to Access:
+Visit the “IPO/FPO News” or “Upcoming Issue” sections.
+Subscribe to notifications for real-time updates.
+Why It’s Useful: ShareSansar is a leading financial portal in Nepal, providing comprehensive and updated IPO information.
+NepseBuzz
+Website: nepsebuzz.com
+What You’ll Find:
+A detailed list of over 100 upcoming IPOs for 2081 (2025), including approved and pending IPOs.
+Sector-specific IPOs (e.g., hydropower, tourism, microfinance).
+Information on issue size, share price (typically Rs. 100 per share), and key dates.
+Example: Guardian Micro Life Insurance IPO (18,45,000 units, opening Poush 21–24, 2081).
+How to Access:
+Check the “Upcoming IPOs” section for a regularly updated list.
+Download PDFs or view tables for detailed IPO schedules.
+Why It’s Useful: NepseBuzz provides expert insights and is tailored for investors seeking real-time IPO updates.
+ShareGyan Nepal
+Website: sharegyannepal.com
+What You’ll Find:
+Lists of upcoming and approved IPOs with details on SEBON’s review process.
+Information on how to apply for IPOs and key dates.
+How to Access:
+Navigate to the “Upcoming IPO” section for a list of IPOs in the SEBON pipeline.
+Why It’s Useful: ShareGyan compiles SEBON data and presents it in an accessible format.
+Share Calculator Nepal
+Website: sharecalculatornepal.com
+What You’ll Find:
+Updated lists of upcoming IPOs for 2024/2080, including hydropower and microfinance sectors.
+Details like total units issued, issue manager, and approval dates.
+Example: Aatmanirbhar Laghubitta Bittiya Sanstha (203,380 shares, approved 2079/09/17, Sunrise Capital Ltd. as issue manager).
+How to Access:
+Visit the “Upcoming IPOs” section for tables and blogs with IPO details.
+Why It’s Useful: Provides investor-friendly breakdowns and tools for calculating IPO-related costs.
+The Share Ninja
+Website: theshareninja.com
+What You’ll Find:
+A dedicated, daily-updated page for ongoing and upcoming IPOs.
+Data sourced from SEBON and other trusted platforms.
+Subscription options for notifications on IPO updates.
+How to Access:
+Check the “Upcoming IPOs in Nepal” live page for real-time updates.
+Subscribe to notifications to stay informed.
+Why It’s Useful: Offers frequent updates and a user-friendly interface for tracking IPOs.
+Finbin Nepal
+Website: finbinnepal.com
+What You’ll Find:
+Lists of upcoming IPOs for 2081/2025, including details on companies like Nepal Micro Insurance Company Limited.
+Guides on how to apply for IPOs and open a Demat account.
+How to Access:
+Visit the “Upcoming IPOs” section for updated tables and blogs.
+Subscribe to newsletters for IPO alerts.
+Why It’s Useful: Combines IPO listings with educational content for new investors.
+Nepali Paisa
+Website: nepalipaisa.com
+What You’ll Find:
+Updates on Nepal’s share market, including IPO news and trends.
+Insights into ongoing and upcoming IPOs.
+How to Access:
+Check the “IPO” section for news and updates.
+Why It’s Useful: Provides a broader perspective on Nepal’s financial landscape alongside IPO details.
+Investopaper
+Website: investopaper.com
+What You’ll Find:
+Lists of upcoming IPOs with links to detailed company information.
+Example: Vision Energy & Power (65 lakh shares, NIBL Ace Capital as issue manager).
+How to Access:
+Visit the “IPO” section for a table of upcoming IPOs.
+Subscribe for email or mobile alerts.
+Why It’s Useful: Offers detailed company profiles alongside IPO data.
+3. Social Media and X Posts
+Platform: X
+What You’ll Find:
+Real-time updates on IPO openings, closings, and allotments from financial news accounts and brokers.
+Examples:
+Trade Tower IPO: First phase opened on 8th Baishakh, 2082 (April 21, 2025) for foreign Nepalese immigrants.
+Pure Energy IPO: Allotment notice issued on April 25, 2025.
+Hydropower IPO Delays: SEBON’s delay in approving IPOs for 44 hydropower companies (posted April 21, 2025).
+How to Access:
+Follow accounts like @financialnotice, @Khabarhub_Eng, and @naasasecurities on X.
+Search for hashtags like #NepalIPO, #SEBON, or #NEPSE.
+Why It’s Useful: X provides real-time sentiment and breaking news, but always cross-check with official sources like SEBON for accuracy. Note: Information on X may not always be verified, so use it cautiously.
+4. How to Apply for IPOs in Nepal
+To participate in IPOs, you’ll need:
+
+Demat Account: Open a Demat account with a registered stockbroker or financial institution.
+Mero Share: Use the Mero Share platform to apply for IPOs online.
+Log in, go to “My ASBA” > “Current Issue,” select the IPO, enter the quantity, and apply.
+ASBA System: Ensure your bank account is linked for the Application Supported by Blocked Amount (ASBA) process, which blocks funds until allotment.
+IPO Result Checker: Check allotment results on CDSC’s IPO Result Checker or the issue manager’s website.
+5. Additional Tips
+Stay Updated: IPO schedules change frequently. Regularly check SEBON’s website or subscribe to financial portals like ShareSansar or NepseBuzz for notifications.
+Research Companies: Before investing, review company financials, sector performance, and growth potential. SEBON’s IPO documents or portals like Investopaper provide this data.
+Premium IPOs: Some IPOs, like Ghorahi Cement Industry Limited (premium price Rs. 435, face value Rs. 100), are issued above face value. Understand the share premium concept before investing.
+Sector Trends: In 2081 (2025), expect IPOs in hydropower, tourism, and microfinance. Hydropower IPOs are particularly significant due to Nepal’s water resources, but delays in SEBON approvals may affect timelines.
+6. Example of Ongoing/Upcoming IPOs (As of April 2025)
+Ongoing:
+Trade Tower IPO: Open for foreign Nepalese immigrants from 8th to 22nd Baishakh, 2082 (April 21–May 5, 2025). Issue manager: LS Capital Limited.
+Recently Closed:
+Pure Energy IPO: Allotment completed on April 25, 2025. Issue manager: Nabil Investment.
+Upcoming:
+Guardian Micro Life Insurance: 18,45,000 units, opening Poush 21–24, 2081 (January 5–8, 2025).
+Nepal Micro Insurance Company Limited: Next opening IPO (exact dates TBD).
+Note: For the latest IPOs, check SEBON’s pipeline or NepseBuzz for 100+ IPOs planned for 2081 (2025).
+7. Limitations and Cautions
+Delays in Approvals: SEBON’s slow approval process, especially for hydropower IPOs, may delay listings. For example, 44 hydropower companies have been waiting for nearly two years.
+Market Risks: IPO share prices may fluctuate post-listing, and not all IPOs guarantee returns. Conduct thorough research.
+Third-Party Reliability: While portals like ShareSansar and NepseBuzz are reliable, always verify critical details (e.g., issue dates, share units) with SEBON’s official website.
+By using these sources and tools, you can stay informed about ongoing, upcoming, and available IPOs in Nepal and make well-informed investment decisions. If you need specific IPO details or assistance with applying, let me know! and update the data
